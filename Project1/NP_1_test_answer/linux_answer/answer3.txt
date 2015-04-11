@@ -1,0 +1,35 @@
+****************************************
+** Welcome to the information server. **
+****************************************
+% removetag test.html |5
+% ls | number > ls.txt
+% removetag0 test.html |1
+Error: illegal tag "!test.html"
+% number | number |2 cat ls.txt |1
+% UNKNOWN_COMMAND!
+Unknown command: [UNKNOWN_COMMAND!]
+% number
+   1    1 
+   2    2 Test
+   3    3 This is a test program
+   4    4 for ras.
+   5    5 
+   6    6    1 
+   7    7    2 Test
+   8    8    3 This is a test program
+   9    9    4 for ras.
+  10   10    5 
+  11    1 bin
+  12    2 test.html
+% ls |4 ls |3
+% ls | number | cat
+bin
+ls.txt
+test.html
+bin
+ls.txt
+test.html
+   1 bin
+   2 ls.txt
+   3 test.html
+% exit

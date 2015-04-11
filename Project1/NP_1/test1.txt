@@ -1,0 +1,6 @@
+<!test.html>
+<TITLE>Test<TITLE>
+<BODY>This is a <b>test</b> program
+for ras.
+</BODY>
+

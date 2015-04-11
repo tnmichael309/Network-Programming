@@ -1,0 +1,30 @@
+****************************************
+** Welcome to the information server. **
+****************************************
+% printenv PATH
+PATH= bin:.
+% ls
+bin
+ls.txt
+test.html
+test1.txt
+test2.txt
+% setenv PATH .
+% printenv PATH
+PATH= .
+% ls
+Unknown command: [ls]
+% setenv PATH bin
+% ls -al bin
+total 104
+drwxr-xr-x  2 khyeh  gcs   4096 Oct 21 20:12 .
+drwxr-xr-x  3 khyeh  gcs   4096 Oct 22 10:36 ..
+-r-xr-xr-x  1 khyeh  gcs  11808 Oct 21 20:12 cat
+-r-xr-xr-x  1 khyeh  gcs  30208 Oct 21 20:12 ls
+-rwxr-xr-x  1 khyeh  gcs   7576 Oct 21 20:11 noop
+-rwxr-xr-x  1 khyeh  gcs  13179 Oct 21 20:12 number
+-rwxr-xr-x  1 khyeh  gcs   9100 Oct 21 20:12 removetag
+-rwxr-xr-x  1 khyeh  gcs  10089 Oct 21 20:12 removetag0
+% date
+Unknown command: [date]
+% exit

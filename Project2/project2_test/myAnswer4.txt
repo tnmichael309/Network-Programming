@@ -1,0 +1,194 @@
+
+login1
+1| ****************************************
+1| ** Welcome to the information server. **
+1| ****************************************
+1| *** User '(no name)' entered from 140.113.235.168/55505. ***
+1| % 
+
+login2
+1| *** User '(no name)' entered from 140.113.235.168/55506. ***
+2| ****************************************
+2| ** Welcome to the information server. **
+2| ****************************************
+2| *** User '(no name)' entered from 140.113.235.168/55506. ***
+2| % 
+
+login3
+1| *** User '(no name)' entered from 140.113.235.168/55507. ***
+2| *** User '(no name)' entered from 140.113.235.168/55507. ***
+3| ****************************************
+3| ** Welcome to the information server. **
+3| ****************************************
+3| *** User '(no name)' entered from 140.113.235.168/55507. ***
+3| % 
+
+login4
+1| *** User '(no name)' entered from 140.113.235.168/55508. ***
+2| *** User '(no name)' entered from 140.113.235.168/55508. ***
+3| *** User '(no name)' entered from 140.113.235.168/55508. ***
+4| ****************************************
+4| ** Welcome to the information server. **
+4| ****************************************
+4| *** User '(no name)' entered from 140.113.235.168/55508. ***
+4| % 
+
+1 % name Egglet
+1| *** User from 140.113.235.168/55505 is named 'Egglet'. ***
+1| % 
+2| *** User from 140.113.235.168/55505 is named 'Egglet'. ***
+3| *** User from 140.113.235.168/55505 is named 'Egglet'. ***
+4| *** User from 140.113.235.168/55505 is named 'Egglet'. ***
+
+2 % name FruitBuffet
+1| *** User from 140.113.235.168/55506 is named 'FruitBuffet'. ***
+2| *** User from 140.113.235.168/55506 is named 'FruitBuffet'. ***
+2| % 
+3| *** User from 140.113.235.168/55506 is named 'FruitBuffet'. ***
+4| *** User from 140.113.235.168/55506 is named 'FruitBuffet'. ***
+
+3 % name GingerCookies
+1| *** User from 140.113.235.168/55507 is named 'GingerCookies'. ***
+2| *** User from 140.113.235.168/55507 is named 'GingerCookies'. ***
+3| *** User from 140.113.235.168/55507 is named 'GingerCookies'. ***
+3| % 
+4| *** User from 140.113.235.168/55507 is named 'GingerCookies'. ***
+
+4 % name HotCakes
+1| *** User from 140.113.235.168/55508 is named 'HotCakes'. ***
+2| *** User from 140.113.235.168/55508 is named 'HotCakes'. ***
+3| *** User from 140.113.235.168/55508 is named 'HotCakes'. ***
+4| *** User from 140.113.235.168/55508 is named 'HotCakes'. ***
+4| % 
+
+1 % number test.html >2
+1| *** Egglet (#1) just piped 'number test.html >2' to FruitBuffet (#2) ***
+1| % 
+2| *** Egglet (#1) just piped 'number test.html >2' to FruitBuffet (#2) ***
+3| *** Egglet (#1) just piped 'number test.html >2' to FruitBuffet (#2) ***
+4| *** Egglet (#1) just piped 'number test.html >2' to FruitBuffet (#2) ***
+
+1 % cat test.html >3
+1| *** Egglet (#1) just piped 'cat test.html >3' to GingerCookies (#3) ***
+1| % 
+2| *** Egglet (#1) just piped 'cat test.html >3' to GingerCookies (#3) ***
+3| *** Egglet (#1) just piped 'cat test.html >3' to GingerCookies (#3) ***
+4| *** Egglet (#1) just piped 'cat test.html >3' to GingerCookies (#3) ***
+
+1 % cat test.html | cat >3
+1| *** Error: the pipe #1->#3 already exists. ***
+1| % -1
+
+1 % cat test.html >6
+1| *** Error: user #6 does not exist yet. ***
+1| % -1
+
+2 % number <1
+1| -1
+1| *** FruitBuffet (#2) just received from Egglet (#1) by 'number <1' ***
+1| -1
+2|    1    1 <!test.html>
+2|    2    2 <TITLE>Test<TITLE>
+2|    3    3 <BODY>This is a <b>test</b> program
+2|    4    4 for ras.
+2|    5    5 </BODY>
+2| *** FruitBuffet (#2) just received from Egglet (#1) by 'number <1' ***
+2| % 
+3| *** FruitBuffet (#2) just received from Egglet (#1) by 'number <1' ***
+4| *** FruitBuffet (#2) just received from Egglet (#1) by 'number <1' ***
+
+2 % cat test.html >3
+1| -1
+1| *** FruitBuffet (#2) just piped 'cat test.html >3' to GingerCookies (#3) ***
+1| -1
+2| *** FruitBuffet (#2) just piped 'cat test.html >3' to GingerCookies (#3) ***
+2| % 
+3| *** FruitBuffet (#2) just piped 'cat test.html >3' to GingerCookies (#3) ***
+4| *** FruitBuffet (#2) just piped 'cat test.html >3' to GingerCookies (#3) ***
+
+2 % number <4
+2| -1
+2| *** Error: the pipe #4->#2 does not exist yet. ***
+2| % 
+
+3 % number <2
+1| *** GingerCookies (#3) just received from FruitBuffet (#2) by 'number <2' ***
+2| -1
+2| *** GingerCookies (#3) just received from FruitBuffet (#2) by 'number <2' ***
+2| -1
+3|    1 <!test.html>
+3|    2 <TITLE>Test<TITLE>
+3|    3 <BODY>This is a <b>test</b> program
+3|    4 for ras.
+3|    5 </BODY>
+3| *** GingerCookies (#3) just received from FruitBuffet (#2) by 'number <2' ***
+3| % 
+4| *** GingerCookies (#3) just received from FruitBuffet (#2) by 'number <2' ***
+
+3 % ls >4
+1| *** GingerCookies (#3) just piped 'ls >4' to HotCakes (#4) ***
+2| -1
+2| *** GingerCookies (#3) just piped 'ls >4' to HotCakes (#4) ***
+2| -1
+3| *** GingerCookies (#3) just piped 'ls >4' to HotCakes (#4) ***
+3| % 
+4| *** GingerCookies (#3) just piped 'ls >4' to HotCakes (#4) ***
+
+2 % number test.html >5
+2| -1
+2| *** Error: user #5 does not exist yet. ***
+2| % 
+
+3 % number <2
+3| -1
+3| *** Error: the pipe #2->#3 does not exist yet. ***
+3| % 
+
+4 % removetag test.html >1
+1| *** HotCakes (#4) just piped 'removetag test.html >1' to Egglet (#1) ***
+2| *** HotCakes (#4) just piped 'removetag test.html >1' to Egglet (#1) ***
+3| -1
+3| *** HotCakes (#4) just piped 'removetag test.html >1' to Egglet (#1) ***
+3| -1
+4| *** HotCakes (#4) just piped 'removetag test.html >1' to Egglet (#1) ***
+4| % 
+
+4 % number <3
+1| *** HotCakes (#4) just received from GingerCookies (#3) by 'number <3' ***
+2| *** HotCakes (#4) just received from GingerCookies (#3) by 'number <3' ***
+3| -1
+3| *** HotCakes (#4) just received from GingerCookies (#3) by 'number <3' ***
+3| -1
+4|    1 bin
+4|    2 test.html
+4| *** HotCakes (#4) just received from GingerCookies (#3) by 'number <3' ***
+4| % 
+
+4 % cat <3
+4| -1
+4| *** Error: the pipe #3->#4 does not exist yet. ***
+4| % 
+
+3 % cat <1
+1| *** GingerCookies (#3) just received from Egglet (#1) by 'cat <1' ***
+2| *** GingerCookies (#3) just received from Egglet (#1) by 'cat <1' ***
+3| <!test.html>
+3| <TITLE>Test<TITLE>
+3| <BODY>This is a <b>test</b> program
+3| for ras.
+3| </BODY>
+3| *** GingerCookies (#3) just received from Egglet (#1) by 'cat <1' ***
+3| % 
+4| -1
+4| *** GingerCookies (#3) just received from Egglet (#1) by 'cat <1' ***
+4| -1
+
+1 % number <5
+1| -1
+1| *** Error: the pipe #5->#1 does not exist yet. ***
+1| % 
+
+logout1
+1| -1
+1| -1
+1| *** User 'Egglet' left. ***

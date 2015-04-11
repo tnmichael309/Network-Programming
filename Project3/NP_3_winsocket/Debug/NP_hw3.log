@@ -1,0 +1,35 @@
+﻿已經開始建置於 2014/12/7 下午 03:04:14。
+     1>節點 2 (build 目標) 上的專案 "C:\Users\khyeh\Desktop\Network Programming\Project3\NP_3_winsocket\NP_hw3.vcxproj"。
+     1>InitializeBuildStatus:
+         由於指定了 "AlwaysCreate"，因此正在建立 "Debug\NP_hw3.unsuccessfulbuild"。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt NP_hw3.cpp
+         NP_hw3.cpp
+     1>c:\users\khyeh\desktop\network programming\project3\np_3_winsocket\np_hw3.cpp(190): warning C4018: '<' : signed/unsigned 不相符
+     1>c:\users\khyeh\desktop\network programming\project3\np_3_winsocket\np_hw3.cpp(204): warning C4018: '<' : signed/unsigned 不相符
+     1>c:\users\khyeh\desktop\network programming\project3\np_3_winsocket\np_hw3.cpp(212): warning C4018: '<' : signed/unsigned 不相符
+     1>c:\users\khyeh\desktop\network programming\project3\np_3_winsocket\np_hw3.cpp(417): warning C4018: '<' : signed/unsigned 不相符
+     1>c:\users\khyeh\desktop\network programming\project3\np_3_winsocket\np_hw3.cpp(459): warning C4244: '=' : 將 'unsigned __int64' 轉換為 'ULONG'，由於型別不同，可能導致資料遺失
+     1>c:\users\khyeh\desktop\network programming\project3\np_3_winsocket\np_hw3.cpp(548): warning C4018: '<' : signed/unsigned 不相符
+       ResourceCompile:
+         所有輸出都是最新的。
+       ManifestResourceCompile:
+         所有輸出都是最新的。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\NP_hw3.exe" /INCREMENTAL /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\NP_hw3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Debug\NP_hw3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\NP_hw3.lib" /MACHINE:X86 Debug\NP_hw3.res
+         Debug\NP_hw3.exe.embed.manifest.res
+         Debug\NP_hw3.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\NP_hw3.exe.embed.manifest" /manifest Debug\NP_hw3.exe.intermediate.manifest
+         所有輸出都是最新的。
+       LinkEmbedManifest:
+         所有輸出都是最新的。
+         NP_hw3.vcxproj -> C:\Users\khyeh\Desktop\Network Programming\Project3\NP_3_winsocket\Debug\NP_hw3.exe
+       FinalizeBuildStatus:
+         正在刪除檔案 "Debug\NP_hw3.unsuccessfulbuild"。
+         正在變更時間戳記 "Debug\NP_hw3.lastbuildstate"。
+     1>專案 "C:\Users\khyeh\Desktop\Network Programming\Project3\NP_3_winsocket\NP_hw3.vcxproj" (build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:01.55

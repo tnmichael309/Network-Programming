@@ -1,0 +1,17 @@
+
+login1
+1| ****************************************
+1| ** Welcome to the information server. **
+1| ****************************************
+1| *** User '(no name)' entered from 140.113.235.168/45159. ***
+1| % 
+
+login2
+
+1 % removetag test.html | number | cat >2
+1| *** no name (#4) just piped 'removetag test.html | number | cat >2
+1| ' to no name (#2) ***
+1| % 
+
+1 % ls | number > ls.txt
+1| % 
